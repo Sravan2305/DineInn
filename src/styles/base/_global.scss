@@ -1,0 +1,37 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    // background-color:  rgb(236, 252, 248) ;
+    margin: 0 1.5vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+div, span , p , a , li, button, span,h1,h2,h3,h4,h5,h6 {
+    font-size: 1.6rem ;
+}
+
+@media screen and (min-width : 1100px){
+    body{
+        margin: 0vh 8% ;
+    }
+}
+a ,ul, li, button, a:visited , a:active, a:hover , input, input:focus, input:active {
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    color: inherit;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Poppins', sans-serif;
+  }

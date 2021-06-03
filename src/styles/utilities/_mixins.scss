@@ -1,0 +1,34 @@
+@mixin flex($justify: false, $flex: false, $direction: false, $align: false) {
+
+    display: flex; //Default
+    
+    @if $justify != false {
+      justify-content: $justify;
+    }
+    
+    @if $flex != false {
+      flex: $flex;
+    }
+    
+    @if $direction != false {
+      flex-direction: $direction;
+    }
+    
+    @if $align != false {
+      align-items: $align;
+    }
+  }
+
+  @mixin flexCenter($justify: center, $flex: false, $direction: false, $align: center) {
+
+    display: flex; //Default
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $flex != false {
+      flex: $flex;
+    }
+    @if $direction != false {
+      flex-direction: $direction;
+    }
+  }
